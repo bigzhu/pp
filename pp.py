@@ -5,6 +5,7 @@ from urlparse import urlparse
 import hashlib
 import subprocess
 import sys
+import os
 
 
 def getDomain(url):
@@ -28,7 +29,8 @@ def getKey():
     '''
     取到key, 没有就问
     '''
-    file_name = 'key.cfg'
+    path = os.path.dirname(os.path.realpath(__file__))
+    file_name = path + '/key.cfg'
     try:
         f_key = open(file_name, 'r')
         key = f_key.read()

@@ -15,7 +15,7 @@ sudo pip install pp_bz
 
 ```bash
 pp https://exmail.qq.com
-``
+```
 
 ## 说明
 应对讨厌的密码

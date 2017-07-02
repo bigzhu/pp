@@ -1,14 +1,22 @@
 
 # pp
 
+## desc
+
+password producer base on your key and site url
+
 ## install
+
 ```bash
 sudo pip install pp_bz
 ```
+
 ## usage
+
 ```bash
 pp https://exmail.qq.com
 ``
+
 ## 说明
 应对讨厌的密码
 

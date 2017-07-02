@@ -72,17 +72,20 @@ def copyToClip(password):
     process.communicate(password.encode('utf-8'))
 
 
-def main(url):
+def run(url):
     password = encode(url)
     copyToClip(password)
     print('已复制到剪贴板!')
 
-if __name__ == '__main__':
+
+def main():
     if len(sys.argv) != 2:
         print('请按以下格式调用:')
-        print('python main.py https://follow.center/login.html')
+        print('pp https://follow.center/login.html')
     else:
         url = sys.argv[1]
-        main(url)
+        run(url)
+if __name__ == '__main__':
+    main()
     # import doctest
     # doctest.testmod(verbose=False, optionflags=doctest.ELLIPSIS)
